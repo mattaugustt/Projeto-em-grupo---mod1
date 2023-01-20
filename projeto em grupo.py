@@ -1,12 +1,15 @@
 #Ana Paula, Lohran e Matheus A.
 #Atendimento de uma clinica de estetica denominada Beauty Body.
 
+
+
+#Função para observar se os valores dados são aceitos
 def valor(x):
   """função que observa se o valor de entrada é valido"""
-  if (x <= 5) and (x > 0):
+  if (x <= 6) and (x > 0):
     return x
   else:
-    print('Valor de entrada não aceito. Escolha uma das opções (de 1 a 5).')
+    print('Valor de entrada não aceito. Escolha uma das opções (de 1 a 6).')
     x = int(input("Diga a opção que deseja escolher: \n"))
     return x
 
@@ -21,10 +24,9 @@ num_contat = input('\nNos dê um telefone para contato - com ddd: (Opcional)\n')
 
 while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
     infos = []
-    print('\nComo podemos te ajudar? \n1 - Serviços oferecidos. \n2 - Promoções. \n3 - Horários disponíveis. \n4 - Atendimento com atendente. \n5 - Sair.\n')
+    print('\nComo podemos te ajudar? \n1 - Serviços oferecidos. \n2 - Promoções. \n3 - Horários disponíveis. \n4 - Atendimento com atendente. \n5 - Sugestão de melhorias ou Reclmações.\n6 - Sair.\n')
     print('\n')
     opcao = valor(int(input('Digite o número relacionado com o seu desejo: \n')))
-    #criar função que verifica se o valor digitado está entre 1 e 5.
     print('\n')
     list.append(infos, nome)
     list.append(infos, num_contat)
@@ -106,8 +108,26 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
         opcao = ['atendimento com atendente']
         list.append(infos, opcao)
 
+
+
+#entra na quinta opção:
+    elif (opcao == 5):
+        print('\n1 - Sugestão de melhorias. \n2 - Reclamação.\n')
+        q = int(input('\nDiga qual das operações deseja realizar: (Diga o número correspondente) \n'))
+        if (q == 1):
+            m = input('\nNos diga em que podemos melhorar: \n')
+            opcao = ['sugestão de melhoria']
+            list.append(infos, opcao)
+            list.append(infos, m)
+        elif (q == 2):
+            r = input('\nQual a sua reclamação?\n')
+            opcao = ['reclamação']
+            list.append(infos, opcao)
+            list.append(infos, r)
+        
     
-    
+
+
 #encerra o atendimento:
     else:
         print('Atendimento finalizado.\nA clínica Beauty Body agradece pela preferência. ')
@@ -117,6 +137,8 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
 
 
 
+
+#imprime os dados e operações dos usuários:
 def imprime(lista):
   """imprime linha a linha da lista"""
   for i in lista:
