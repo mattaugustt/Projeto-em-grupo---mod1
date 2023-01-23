@@ -16,20 +16,21 @@ def valor(x):
 
 
 print('Boas vindas, eu sou a Pri, sua atendente virtual da clínica de estética Beauty Body. \n')
-usuarios = []
+usuarios = [] #lista com as informações de todos os usuários, bem como suas pesquisas ou ações no atendimento.
 cont = 'sim'
 hr = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']]
 nome = input('Como nós podemos te chamar? (Opcional)\n')
 num_contat = input('\nNos dê um telefone para contato - com ddd: (Opcional)\n')
 
-while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
-    infos = []
+while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's') or (cont == 'S'):
+    infos = [] #lista com as informações de cada ação do usuário
     print('\nComo podemos te ajudar? \n1 - Serviços oferecidos. \n2 - Promoções. \n3 - Horários disponíveis. \n4 - Atendimento com atendente. \n5 - Sugestão de melhorias ou Reclmações.\n6 - Sair.\n')
     print('\n')
     opcao = valor(int(input('Digite o número relacionado com o seu desejo: \n')))
     print('\n')
     list.append(infos, nome)
     list.append(infos, num_contat)
+    #adicionam o nome e número na lista de infos do usuario
 
 #entra na primeira opção:
     if (opcao == 1):
@@ -58,6 +59,7 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
             list.append(infos, opcao)
             list.append(infos, ['sugestão'])
             list.append(infos, nv_duvida)
+            #adiciona a opção selecionada e a ação do usuário na lista infos.
 
             
 #entra na segunda opção:
@@ -75,6 +77,7 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
             print('Valor: R$ 550,00')
         opcao = ['promoções disponíveis']
         list.append(infos, opcao)
+        #adiciona a opção selecionada e a ação do usuário na lista infos.
         
     
 #entra na terceira opção:
@@ -99,6 +102,7 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
         list.append(infos, opcao)
         list.append(infos, j)
         list.append(infos, sel)
+        #adiciona a opção selecionada e a ação do usuário na lista infos.
             
     
 
@@ -107,6 +111,7 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
         print('\nPara entrar em contato com nossos atendentes, ligue para a nossa central de atendimento: \nXXX-XXX-XXX')
         opcao = ['atendimento com atendente']
         list.append(infos, opcao)
+        #adiciona a opção selecionada e a ação do usuário na lista infos.
 
 
 
@@ -124,23 +129,26 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's'):
             opcao = ['reclamação']
             list.append(infos, opcao)
             list.append(infos, r)
+            #adiciona a opção selecionada e a ação do usuário na lista infos.
         
     
 
 
 #encerra o atendimento:
     else:
-        print('Atendimento finalizado.\nA clínica Beauty Body agradece pela preferência. ')
         break
     list.append(usuarios, infos)
+    #adiciona os dados armazenados na lista infos dentro da lista de informações registradas pelos usuários.
     cont = input('\nDeseja fazer outra operação?\n')
+print('\n')
+print('Atendimento finalizado.\nA clínica Beauty Body agradece pela preferência. ')
 
 
 
 
 #imprime os dados e operações dos usuários:
 def imprime(lista):
-  """imprime linha a linha da lista"""
+  """imprime cada linha da lista"""
   for i in lista:
     print(i)
 
