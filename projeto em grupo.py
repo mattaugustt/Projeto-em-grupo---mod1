@@ -17,8 +17,12 @@ def valor(x):
 
 print('Boas vindas, eu sou a Pri, sua atendente virtual da clínica de estética Beauty Body. \n')
 usuarios = [] #lista com as informações de todos os usuários, bem como suas pesquisas ou ações no atendimento.
-cont = 'sim'
-hr = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']]
+cont = 'sim' #variavel para continuar rodando o looping while.
+hr_lp = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']] #horarios limpeza de pele.
+hr_mc = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']] #horarios massagem coporal.
+hr_ec = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']] #horarios esfoliação corporal.
+hr_dl = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']] #horarios drenagem linfática..
+
 nome = input('Como nós podemos te chamar? (Opcional)\n')
 num_contat = input('\nNos dê um telefone para contato - com ddd: (Opcional)\n')
 
@@ -30,7 +34,7 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's') or 
     print('\n')
     list.append(infos, nome)
     list.append(infos, num_contat)
-    #adicionam o nome e número na lista de infos do usuario
+    #adiciona o nome e o número na lista de infos do usuario
 
 #entra na primeira opção:
     if (opcao == 1):
@@ -82,25 +86,89 @@ while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's') or 
     
 #entra na terceira opção:
     elif (opcao == 3):
-        print('Horários disponíveis no dia: \n')
-        print(hr)
-        i = int(input('\nDiga qual o horário deseja reservar: (ex. primeiro hórario oferecido: digite 1)\n'))
-        j = input('\nDiga qual o procedimento que deseja realizar: \n\n')
-        if (i == 1):
+        print('\nProcedimentos: \n1 - Limpeza de pele. \n2 - Massagem Corporal. \n3 - Esfoliação corporal. \n4 - Drenagem linfática. \n')
+        j = int(input('\nDiga qual o procedimento que deseja consultar os horários disponíveis: \n\n'))
+        
+        if (j == 1): #Limpesa de pele
+          opcao = ['horário marcado - limpeza de pele']
+          print('\nHorários disponíveis para limpeza de pele:\n')
+          print(hr_lp)
+          print('\n')
+          i = int(input('\nDiga qual o horário deseja reservar: (ex. primeiro hórario oferecido: digite 1)\n'))
+          if (i == 1):
             print('\nHorário selecionado:') 
-            sel = list.pop(hr[i-1])
+            sel = list.pop(hr_lp[i-1])
             print(sel)
-        elif (i == 2):
+          elif (i == 2):
             print('\nHorário selecionado:')
-            sel = list.pop(hr[i-1])
+            sel = list.pop(hr_lp[i-1])
             print(sel)
-        elif (i == 3):
+          elif (i == 3):
             print('\nHorário selecionado:')
-            sel = list.pop(hr[i-1])
+            sel = list.pop(hr_lp[i-1])
             print(sel)
-        opcao = ['horários disponíveis']
+
+        elif (j == 2): #Massagem corporal
+          opcao = ['horário marcado - massagem corporal']
+          print('\nHorários disponíveis para massagem corporal:\n')
+          print(hr_mc)
+          print('\n')
+          i = int(input('\nDiga qual o horário deseja reservar: (ex. primeiro hórario oferecido: digite 1)\n'))
+          if (i == 1):
+            print('\nHorário selecionado:') 
+            sel = list.pop(hr_mc[i-1])
+            print(sel)
+          elif (i == 2):
+            print('\nHorário selecionado:')
+            sel = list.pop(hr_mc[i-1])
+            print(sel)
+          elif (i == 3):
+            print('\nHorário selecionado:')
+            sel = list.pop(hr_mc[i-1])
+            print(sel)
+
+
+        elif (j == 3): #Esfoliação corporal
+          opcao = ['horário marcado - esfoliação corporal']
+          print('\nHorários disponíveis para esfoliação corporal:\n')
+          print(hr_ec)
+          print('\n')
+          i = int(input('\nDiga qual o horário deseja reservar: (ex. primeiro hórario oferecido: digite 1)\n'))
+          if (i == 1):
+            print('\nHorário selecionado:') 
+            sel = list.pop(hr_ec[i-1])
+            print(sel)
+          elif (i == 2):
+            print('\nHorário selecionado:')
+            sel = list.pop(hr_ec[i-1])
+            print(sel)
+          elif (i == 3):
+            print('\nHorário selecionado:')
+            sel = list.pop(hr_ec[i-1])
+            print(sel)  
+
+        
+        elif (j == 4): #Drenagem linfática
+          opcao = ['horário marcado - drenagem linfática']
+          print('\nHorários disponíveis para drenagem linfática:\n')
+          print(hr_dl)
+          print('\n')
+          i = int(input('\nDiga qual o horário deseja reservar: (ex. primeiro hórario oferecido: digite 1)\n'))
+          if (i == 1):
+            print('\nHorário selecionado:') 
+            sel = list.pop(hr_dl[i-1])
+            print(sel)
+          elif (i == 2):
+            print('\nHorário selecionado:')
+            sel = list.pop(hr_dl[i-1])
+            print(sel)
+          elif (i == 3):
+            print('\nHorário selecionado:')
+            sel = list.pop(hr_dl[i-1])
+            print(sel)
+
         list.append(infos, opcao)
-        list.append(infos, j)
+        #list.append(infos, j)
         list.append(infos, sel)
         #adiciona a opção selecionada e a ação do usuário na lista infos.
             
