@@ -3,6 +3,18 @@
 
 
 
+#Função para observar se foi dado algum nome
+def nome(nome):
+  """função que verifica se o nome foi preenchido"""
+  nome = str(nome)
+  if (len(nome) == 0):
+    print('\nNome inválido, digite novamente:\n')
+    nome = input()
+    return nome
+  else:
+    return nome
+
+
 #Função para observar se os valores dados são aceitos
 def valor(x):
   """função que observa se o valor de entrada é valido"""
@@ -23,7 +35,7 @@ hr_mc = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']] 
 hr_ec = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']] #horarios esfoliação corporal.
 hr_dl = [['segunda - 9 horas'], ['segunda - 13 horas'], ['segunda - 15 horas']] #horarios drenagem linfática..
 
-nome = input('Como nós podemos te chamar? (Opcional)\n')
+nome = nome(input('Como nós podemos te chamar? (Opcional)\n'))
 num_contat = input('\nNos dê um telefone para contato - com ddd: (Opcional)\n')
 
 while (cont == 'sim') or (cont == 'SIM') or (cont == 'Sim') or (cont == 's') or (cont == 'S'):
