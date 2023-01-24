@@ -5,8 +5,8 @@
 
 Integrantes: Ana Paula Ferreira, Lohran Costa e Matheus Augusto. <br /> 
 
-e-mail para contato: <br /> 
-apferreira1704@gmail.com <br /> 
+e-mails para contato: <br /> 
+apferreira1704@gmail.com; <br /> 
 duusk25@gmail.com; <br /> 
 mataugusto1999@gmail.com. <br /> 
 
