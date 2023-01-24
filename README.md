@@ -3,11 +3,11 @@
 
 **Projeto em Grupo: Módulo 1 - Fale comigo!**
 
-Integrantes: Ana Paula Ferreira, Lohran Costa e Matheus Augusto.
-e-mail para contato:
-apferreira1704@gmail.com;
-duusk25@gmail.com;
-mataugusto1999@gmail.com.
+Integrantes: Ana Paula Ferreira, Lohran Costa e Matheus Augusto. <br /> 
+e-mail para contato: <br /> 
+apferreira1704@gmail.com <br /> 
+duusk25@gmail.com; <br /> 
+mataugusto1999@gmail.com. <br /> 
 
 
 mataugusto1999@gmail.com
