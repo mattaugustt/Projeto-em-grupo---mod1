@@ -3,7 +3,7 @@
 
 **Projeto em Grupo: Módulo 1 - Fale comigo!**
 
-Integrantes: Ana Paula, Lohran e Matheus A (TI e Geociências).
+Integrantes: Ana Paula, Lohran e Matheus Augusto (TI e Geociências).
 e-mail para contato:
 
 
