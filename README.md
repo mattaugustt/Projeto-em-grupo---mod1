@@ -4,13 +4,12 @@
 **Projeto em Grupo: Módulo 1 - Fale comigo!**
 
 Integrantes: Ana Paula Ferreira, Lohran Costa e Matheus Augusto. <br /> 
+
 e-mail para contato: <br /> 
 apferreira1704@gmail.com <br /> 
 duusk25@gmail.com; <br /> 
 mataugusto1999@gmail.com. <br /> 
 
-
-mataugusto1999@gmail.com
 
 - Proposta que nos foi dada:
 ''Criar um projeto que vai ajudar com atendimentos automatizados de dúvidas sobre a empresa e no futuro vai coletar informações para auxiliar na tomada de decisão''.
