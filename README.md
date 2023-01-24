@@ -1,9 +1,13 @@
 # SENAC
-CURSO DE ANÁLISE DE DADOS
+**CURSO DE ANÁLISE DE DADOS**
 
-Projeto em Grupo: Módulo 1 - Fale comigo!
+* Projeto em Grupo: Módulo 1 - Fale comigo!
 
-Integrantes: Ana Paula, Lohran e Matheus A.
+Integrantes: Ana Paula, Lohran e Matheus A (TI e Geociências).
+e-mail para contato:
+
+
+mataugusto1999@gmail.com
 
 - Proposta que nos foi dada:
 ''Criar um projeto que vai ajudar com atendimentos automatizados de dúvidas sobre a empresa e no futuro vai coletar informações para auxiliar na tomada de decisão''.
