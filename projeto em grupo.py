@@ -1,6 +1,12 @@
-#Ana Paula, Lohran e Matheus A.
-#Atendimento de uma clinica de estetica denominada Beauty Body.
 
+
+#*******************************************************************************
+# Curso Análise de Dados - Senac/Resilia.                                      *
+# Projeto em grupo - Módulo 1.                                                 *
+#       Fale comigo!                                                           *
+# Integrantes: Ana Paula Ferreira, Lohran Costa e Matheus Augusto.             *
+# Atendimento de uma clinica de estetica denominada Beauty Body.               *
+#*******************************************************************************
 
 
 #Função para observar se foi dado algum nome
